@@ -30,3 +30,8 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
+
+    # Метод __str__ возвращает строковое значение,
+    # сообщающее состояние объекта.
+    def __str__(self):
+        return 'Остаток составляет: ' + format(self.__balance, '.2f')
